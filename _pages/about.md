@@ -14,7 +14,7 @@ profile:
     </p>
     <br>
     <p>
-      <i class="ai-linkedin-square" style="vertical-align:middle; margin-right:4px;"></i>
+      <i class="fa-brands fa-linkedin" style="vertical-align:middle; margin-right:4px;"></i>
       <a href="https://www.linkedin.com/in/ethanlw1/">LinkedIn</a>
     </p>
     <p>
