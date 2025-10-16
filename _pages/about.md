@@ -7,9 +7,17 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 profile:
   align: right
   image: myProfile.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>(626)203-3085</p>
+    <p>
+      <i class="ai-linkedin-square" style="vertical-align:middle; margin-right:4px;"></i>
+      <a href="https://www.linkedin.com/in/ethanlw1/">LinkedIn</a>
+    </p>
+    <p>
+      <i class="fa fa-envelope" style="vertical-align:middle; margin-right:4px;"></i>
+      <a href="mailto:ethanlw1@uci.edu">ethanlw1@uci.edu</a>
+    </p>
 #    <p>123 your address street</p>
 #    <p>Your City, State 12345</p>
 
@@ -27,8 +35,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! My name is Ethan Wong, and I am a current Master of Data Science student at the University of California, Irvine.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+From a young age, I’ve been fascinated by numbers, graphs, and visualizations. I love exploring data, uncovering patterns, and understanding the mathematical processes behind them, which led me to pursue data science as a career. As an MDS student at UC Irvine, I’m particularly passionate about AI, machine learning, and data analytics. In my undergraduate, my favorite courses were Intro to Artificial Intelligence and Machine Learning & Data Mining. I enjoy applying insights from data to solve real-world problems, learning across disciplines, and building projects that turn complex information into actionable knowledge. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Feel free to connect with me on <a href="https://www.linkedin.com/in/ethanlw1/" target="_blank"><i class="ai-linkedin-square"></i> LinkedIn</a> or reach me at <a href="mailto:ethanlw1@uci.edu"><i class="fa fa-envelope"></i> ethanlw1@uci.edu</a>!
