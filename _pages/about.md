@@ -7,9 +7,12 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 profile:
   align: right
   image: my_prof.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: |
-    <p>(626) 203-3085</p>
+    <p>
+      (626) 203-3085
+    </p>
+    <br>
     <p>
       <i class="ai-linkedin-square" style="vertical-align:middle; margin-right:4px;"></i>
       <a href="https://www.linkedin.com/in/ethanlw1/">LinkedIn</a>
