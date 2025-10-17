@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Ethan Lin Wong
+      value: Albert Einstein
     - name: Date of Birth
-      value: 11th October 2003
+      value: 14th March 1879
     - name: Languages
-      value: English
+      value: English, German
 
 - title: Education
   type: time_table
