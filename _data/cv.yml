@@ -2,96 +2,84 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Ethan Lin Wong
+    - name: Location
+      value: Arcadia, CA
+    - name: Email
+      value: ethanlw1@uci.edu
+    - name: Phone
+      value: (626) 203-3085
+    - name: LinkedIn
+      value: linkedin.com/in/ethanlw1
+    - name: GitHub
+      value: github.com/txchnothunder
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Data Science
+      institution: University of California, Irvine
+      year: Expected Dec 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Machine Learning, Statistics, Data Science
+        - Focus areas — Health Data Science, AI/ML, Financial Analytics
+    - title: Bachelor of Science in Data Science
+      institution: University of California, Irvine
+      year: June 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Intro to Artificial Intelligence
+        - Machine Learning and Data Mining
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Statistics Tutor
+      institution: Pasadena City College, Pasadena, CA
+      year: Sept 2022 – Aug 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Facilitated 500+ hours of one-on-one technical instruction in introductory and intermediate statistics
+        - Topics covered — probability, numerical analysis, hypothesis testing
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/txchnothunder/rl-cubed">Rubik's Cube RL Solver</a>
+      year: Nov 2025 – present
+      description:
+        - Engineered a Hybrid Solver (IDDFS + Beam Search + Greedy restarts) achieving 88% solve rate on 1–10 move scrambles
+        - Original course submission achieved 26.9% cumulative success rate; post-course improvements raised this substantially
+        - Surpassed RL Policy Iteration baseline by 8× in solve reliability using a dense sticker-level reward function
+    - title: Stock Directional Forecasting
+      year: Feb – Mar 2026
+      description:
+        - Built a 57.3% precision forecasting model from a 20-feature OHLCV pipeline over 10 years of NVIDIA data
+        - Soft Voting Ensemble (Random Forest + Logistic Regression) outperformed random-walk baseline by 14.6%
+    - title: Wildfire Smoke Dispersion Modeling
+      year: Jan – May 2025
+      description:
+        - Led a 4-person team to build a geospatial smoke-dispersion forecasting tool for the 2025 ICS Project Expo
+        - XGBoost model integrating NOAA satellite + Open-Meteo APIs outperformed linear baselines by 2×+
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Machine Learning & AI
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Deep Neural Networks (CNN, RNN, Transformers), Reinforcement Learning, Computer Vision, NLP
+        - XGBoost, Scikit-learn, Model Explainability (SHAP)
+    - title: Programming & Systems
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Python, C++, R, SQL (PostgreSQL, MySQL), Bash/Shell Scripting
+        - Algorithm Development, Data Structures, High-Performance Computing
+    - title: Frameworks & Libraries
+      items:
+        - PyTorch, TensorFlow, Keras, NumPy, Pandas, SciPy, Matplotlib, Seaborn, Plotly
+    - title: Data Engineering & Geospatial
+      items:
+        - ETL Pipelines, Large-Scale Data Processing, PostGIS, GeoPandas, Shapely
+    - title: Mathematics & Statistics
+      items:
+        - Linear Algebra, Bayesian Inference, Probability Theory, Time-Series Analysis, A/B Testing
+    - title: Software & Cloud DevOps
+      items:
+        - Docker, Git/GitHub, Tableau, Jupyter Notebooks, LaTeX
