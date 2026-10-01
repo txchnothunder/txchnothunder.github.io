@@ -17,7 +17,7 @@ const PROJECTS = [
     tags: ["XGBoost", "SHAP", "Geospatial"],
     items: [
       { type: "pdf", label: "Poster", file: "assets/wildfire-smoke/poster.pdf" },
-      { type: "pdf", label: "Final presentation", file: "assets/wildfire-smoke/final-presentation.pdf" }
+      { type: "pdf", label: "Midterm presentation", file: "assets/wildfire-smoke/midterm-presentation.pdf" }
     ]
   }
 ];
