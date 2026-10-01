@@ -73,7 +73,13 @@ function renderProjects() {
     article.appendChild(el("h3", "", project.title));
     article.appendChild(el("p", "meta", project.dates + (project.status ? " | " + project.status : "")));
     article.appendChild(el("p", "", project.summary));
-    if (project.tags) article.appendChild(el("p", "tags", project.tags.join(", ")));
+    if (project.tags) {
+      const tags = el("div", "tags");
+      project.tags.forEach(function (tag) {
+        tags.appendChild(el("span", "", tag));
+      });
+      article.appendChild(tags);
+    }
     article.appendChild(buildMaterials(project));
     list.appendChild(article);
   });
@@ -143,19 +149,18 @@ renderExperience();
 renderEducation();
 renderSkills();
 
+const SCROLL_FADE = false;
+
 function setupReveal() {
+  if (!SCROLL_FADE || !("IntersectionObserver" in window)) return;
   const targets = document.querySelectorAll("#about, h2, .project, .entry, #skills-list");
-  if (!("IntersectionObserver" in window)) return;
   const observer = new IntersectionObserver(
     function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
+        entry.target.classList.toggle("visible", entry.isIntersecting);
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.15 }
   );
   targets.forEach(function (target) {
     target.classList.add("reveal");

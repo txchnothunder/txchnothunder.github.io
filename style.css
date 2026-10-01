@@ -5,6 +5,9 @@
   --line: #dde3ea;
   --accent: #2457c5;
   --on-accent: #fff;
+  --c1: #2457c5;
+  --c2: #0b7a7c;
+  --c3: #e0623f;
   color-scheme: light dark;
 }
 
@@ -16,6 +19,9 @@
     --line: #2a3441;
     --accent: #7aa2f7;
     --on-accent: #0f141b;
+    --c1: #7aa2f7;
+    --c2: #4fd1c5;
+    --c3: #ff9e7a;
   }
 }
 
@@ -110,18 +116,74 @@ main { padding-bottom: 5rem; }
   .intro { flex-direction: column-reverse; align-items: flex-start; gap: 1.25rem; }
 }
 
+body {
+  background:
+    radial-gradient(60rem 30rem at 90% -10%, color-mix(in srgb, var(--c1) 14%, transparent), transparent),
+    radial-gradient(45rem 28rem at 0% 0%, color-mix(in srgb, var(--c2) 11%, transparent), transparent),
+    var(--bg);
+  background-repeat: no-repeat;
+}
+
+h2 { position: relative; }
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 3.5rem;
+  height: 3px;
+  background: var(--c1);
+}
+
+section:nth-of-type(3) h2::after { background: var(--c2); }
+section:nth-of-type(4) h2::after { background: var(--c3); }
+
+#photo { box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px var(--c2); }
+
+.project {
+  --pc: var(--c1);
+  padding-left: 1.1rem;
+  border-left: 4px solid var(--pc);
+}
+
+.project:nth-child(3n + 2) { --pc: var(--c2); }
+.project:nth-child(3n) { --pc: var(--c3); }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  font-style: normal;
+}
+
+.tags span {
+  padding: 0.1rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--pc) 16%, transparent);
+  border-radius: 999px;
+}
+
+.project button { border-color: var(--pc); color: var(--ink); }
+.project button:hover { background: color-mix(in srgb, var(--pc) 16%, transparent); }
+.project button[aria-expanded="true"] { background: color-mix(in srgb, var(--pc) 28%, transparent); color: var(--ink); }
+
+.meta { color: var(--c2); font-weight: 500; }
+
+dt { color: var(--accent); }
+
 .reveal {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  opacity: 0.25;
+  transition: opacity 0.4s ease;
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal { opacity: 1; transition: none; }
 }
