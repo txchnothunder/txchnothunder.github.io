@@ -54,6 +54,12 @@ const RESUME = {
       school: "University of California, Irvine",
       dates: "June 2025",
       note: ""
+    },
+    {
+      degree: "Associate of Art in Engineering and Technology",
+      school: "Pasadena City College",
+      dates: "May 2023",
+      note: ""
     }
   ],
   skills: [
