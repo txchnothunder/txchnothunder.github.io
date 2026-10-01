@@ -142,3 +142,25 @@ renderProjects();
 renderExperience();
 renderEducation();
 renderSkills();
+
+function setupReveal() {
+  const targets = document.querySelectorAll("#about, h2, .project, .entry, #skills-list");
+  if (!("IntersectionObserver" in window)) return;
+  const observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  targets.forEach(function (target) {
+    target.classList.add("reveal");
+    observer.observe(target);
+  });
+}
+
+setupReveal();
