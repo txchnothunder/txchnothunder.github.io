@@ -3,9 +3,9 @@ const RESUME = {
   tagline: "Master of Data Science student at UC Irvine, graduating December 2026",
   photo: "assets/photo.jpg",
   about: [
-    "I'm a Master of Data Science student at UC Irvine, graduating in December 2026. My background is in data analysis, statistics, and machine learning, and my projects range from stock forecasting and wildfire smoke modeling to models of neural recordings.",
-    "Right now I'm most interested in neuroscience and medicine, where machine learning can help answer real questions about how the brain works. I enjoy turning results into slides and figures that people outside the field can follow, and I'm curious about a lot of other areas too, so I'm always happy to try something new.",
-    "Outside of work, I play a lot of D&D and Nintendo games."
+    "Hi, I'm Ethan, a Master of Data Science student at UC Irvine graduating in December 2026. Right now I'm working in a neuroscience lab, using recordings of brain activity from rats to ask what the brain's memory center is doing as they smell and sort through odors. I'm also interning at the California Air Resources Board, where I'm helping move an internal modeling system from VBA to Python by mapping out how it all fits together, starting with diagrams and building toward a graph that makes the system easy for others to explore.",
+    "My favorite part of working with data is turning it into something people can understand quickly, whether that's a figure, a slide, or a diagram. I'm drawn to neuroscience and cognitive science because I want to understand how the brain works, and I'd love to apply that work in medicine. I'm also happy to explore other areas, and I've worked on everything from stock forecasting to wildfire smoke.",
+    "Outside of work, you'll usually find me playing D&D or whatever Nintendo game I'm into lately. If you want to talk about either one, or about my work, feel free to reach out. I'd love to chat."
   ],
   links: [
     { label: "Resume (PDF)", href: "assets/resume.pdf" },
