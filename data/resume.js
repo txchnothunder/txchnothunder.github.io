@@ -1,7 +1,12 @@
 const RESUME = {
   name: "Ethan Wong",
   tagline: "Master of Data Science student at UC Irvine, graduating December 2026",
-  summary: "I build interpretable machine learning models and clear visualizations, most recently on neural recordings and air quality modeling. This site collects the posters, slides, and figures from that work.",
+  photo: "assets/photo.jpg",
+  about: [
+    "I'm a Master of Data Science student at UC Irvine, graduating in December 2026. My background is in data analysis, statistics, and machine learning, and my projects range from stock forecasting and wildfire smoke modeling to models of neural recordings.",
+    "Right now I'm most interested in neuroscience and medicine, where machine learning can help answer real questions about how the brain works. I enjoy turning results into slides and figures that people outside the field can follow, and I'm curious about a lot of other areas too, so I'm always happy to try something new.",
+    "Outside of work, I play a lot of D&D and Nintendo games."
+  ],
   links: [
     { label: "Resume (PDF)", href: "assets/resume.pdf" },
     { label: "Email", href: "mailto:ethanlw1@uci.edu" },
