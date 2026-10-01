@@ -122,7 +122,15 @@ function renderSkills() {
 function renderHeader() {
   document.getElementById("name").textContent = RESUME.name;
   document.getElementById("tagline").textContent = RESUME.tagline;
-  document.getElementById("summary").textContent = RESUME.summary;
+  const about = document.getElementById("about");
+  RESUME.about.forEach(function (text) {
+    about.appendChild(el("p", "", text));
+  });
+  if (RESUME.photo) {
+    const photo = document.getElementById("photo");
+    photo.src = RESUME.photo;
+    photo.hidden = false;
+  }
   const nav = document.getElementById("links");
   RESUME.links.forEach(function (item) {
     nav.appendChild(anchor(item.label, item.href));

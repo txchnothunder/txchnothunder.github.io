@@ -6,7 +6,7 @@ const PROJECTS = [
     summary: "Interpretable models on rat hippocampal recordings that predict whether an odor sequence was in order (73% mean balanced accuracy) and which odor was present (52% against 20% chance). This is the final summer presentation, and the work continues.",
     tags: ["Neuroscience", "Logistic Regression", "Signal Processing"],
     items: [
-      { type: "pdf", label: "Final summer slides", file: "assets/hippocampal-lfp/final-slides.pdf" }
+      { type: "pdf", label: "Summer presentation", file: "assets/hippocampal-lfp/summer-presentation.pdf" }
     ]
   },
   {
@@ -17,7 +17,7 @@ const PROJECTS = [
     tags: ["XGBoost", "SHAP", "Geospatial"],
     items: [
       { type: "pdf", label: "Poster", file: "assets/wildfire-smoke/poster.pdf" },
-      { type: "pdf", label: "Slides", file: "assets/wildfire-smoke/slides.pdf" }
+      { type: "pdf", label: "Final presentation", file: "assets/wildfire-smoke/final-presentation.pdf" }
     ]
   }
 ];
