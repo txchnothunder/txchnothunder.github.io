@@ -3,8 +3,8 @@ const PROJECTS = [
     title: "Decoding Odors and Sequences from Rat Brain Activity",
     dates: "July 2026 to Present",
     status: "Ongoing",
-    summary: "Rats smelled a series of odors while the electrical activity of their hippocampus, a brain region tied to memory, was recorded. I built simple, explainable models that read those signals to tell whether an odor came in the expected order and which odor the rat was smelling, then looked at which brain rhythms mattered and when. The work is ongoing, and I add new presentations as it moves forward.",
-    tags: ["Neuroscience", "Logistic Regression", "Signal Processing"],
+    summary: "Rats smelled a series of nonspatial odor sequences while hippocampal signals were recorded. Built on methodology from <a href=\"https://www.nature.com/articles/s41467-022-28057-6\" target=\"_blank\" rel=\"noopener noreferrer\">Shahbaba et al. (2022)</a>, I initially constructed interpretable GLM models using LFP frequency-band features to decode whether odors were presented in order and identify specific odor signatures.<br><br>Currently, I am investigating the complementary dynamics between LFP time series and single-unit spike trains using the <a href=\"https://arxiv.org/abs/2507.20089\" target=\"_blank\" rel=\"noopener noreferrer\">Meta-Fusion framework</a> (Liang et al., 2025). By leveraging its mutual learning mechanism, I am examining the relative importance of each data modality to understand what unique informational components each contributes to neural decoding.",
+    tags: ["Neuroscience", "Multimodal Fusion", "Meta-Fusion", "Signal Processing"],
     items: [
       { type: "pdf", label: "Summer presentation", file: "assets/hippocampal-lfp/summer-presentation.pdf" }
     ]
